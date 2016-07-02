@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Meta Theme Colour Changer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta id="themeColour" name="theme-color" content="">
+    <meta id="themeColor" name="theme-color" content="">
 
     <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet" type="text/css">
     
@@ -72,7 +72,7 @@
 <script>
     $(".change-color, body").on( "click", function() {
         var colour = '#' + Math.floor(Math.random() * 16777215).toString(16);
-        $("#themeColour").attr('content', colour);
+        $("#themeColor").attr('content', colour);
         $(".change-color").css("color", colour)
     });
 </script>
